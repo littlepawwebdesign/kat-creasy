@@ -1,6 +1,6 @@
 .div-block {
   height: auto;
-  background-image: url('../images/katdug-back.jpg');
+  background-image: url("../images/katdug-back.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -16,8 +16,20 @@
 .bg-block {
   height: 100vh;
   max-height: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/katdug-back.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/katdug-back.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url("../images/katdug-back.jpg");
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/katdug-back.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -69,11 +81,12 @@
 }
 
 .tagline {
-  margin-top: 15px;
-  font-size: 56px;
-  line-height: 65px;
+  margin-top: 0%;
+  margin-bottom: 1%;
+  font-size: 60px;
+  line-height: 70px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .container {
@@ -81,7 +94,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 55px;
+  padding-top: 40px;
   padding-left: 12%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -109,6 +122,15 @@
   letter-spacing: 1px;
 }
 
+.h2.hero {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
 .h3 {
   position: static;
   display: block;
@@ -125,8 +147,46 @@
 }
 
 .h3.hero {
+  margin-top: 2%;
+  padding-left: 0%;
   color: rgba(255, 255, 254, 0.8);
-  font-size: 19px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.yellow.line {
+  margin-top: 5%;
+  margin-right: 30%;
+  padding: 5% 5% 0% 0%;
+  border-top: 1px solid rgba(255, 225, 86, 0.8);
+  border-radius: 0px;
+  background-color: transparent;
+  font-size: 23px;
+  line-height: 35px;
+}
+
+.ul.hero {
+  margin-bottom: 0px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.li.hero::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(255, 225, 86, 0.8); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.li.hero {
+  color: rgba(255, 255, 254, 0.8);
+  margin-bottom: 3%;
+  padding-left: 0%;
+  font-size: 23px;
+  letter-spacing: 1px;
   text-transform: none;
 }
 
@@ -268,8 +328,15 @@
 
 .dug-img {
   background-color: rgba(0, 0, 0, 0.33);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#555), to(#555)), url('../images/1.jpg');
-  background-image: linear-gradient(180deg, #555, #555), url('../images/1.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#555),
+      to(#555)
+    ),
+    url("../images/1.jpg");
+  background-image: linear-gradient(180deg, #555, #555), url("../images/1.jpg");
   background-position: 0px 0px, 0px 0px;
   background-size: auto, auto;
 }
@@ -773,4 +840,3 @@
   -ms-flex-item-align: baseline;
   align-self: baseline;
 }
-
