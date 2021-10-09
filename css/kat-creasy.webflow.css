@@ -131,6 +131,13 @@
   letter-spacing: 2px;
 }
 
+/* Info section */
+.h2-title.banner {
+  max-width: none;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .h3 {
   position: static;
   display: block;
